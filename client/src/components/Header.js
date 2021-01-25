@@ -5,7 +5,8 @@ import Nav from './Nav'
 const Headline = styled.h1`
   font-family: 'Magnum';
   font-size: 40px;
-  color: #2d4059;
+  font-weight: 500px;
+  color: #bce6eb;
   margin: 0;
   padding: 0;
   display: inline;
@@ -14,7 +15,6 @@ const Headline = styled.h1`
 const Header = () => {
   return (
     <div>
-      <Headline>Xiaomei Wu</Headline>
       <Nav />
     </div>
   )
