@@ -47,15 +47,20 @@ const Nav = () => {
   return (
     <div>
     <Grid container spacing={1}>
-       <Grid item xs={6}>
+       <Grid item xs={12}>
           <Paper className={classes.paper}>
           <HomeOutlinedIcon /><Link to="/">Home</Link>
           <FaceOutlinedIcon /><Link to='/about'>About</Link>
           <ComputerOutlinedIcon /><Link to="/projects">Projects</Link>
           <Link to="/blog">Blog</Link>
+
+          <LinkedInIcon />
+            <GitHubIcon />
+            <EmailIcon />
+            <EventAvailableIcon />
           </Paper>
         </Grid>
-        <Grid item xs={6}>
+        {/* <Grid item xs={6}>
           <Paper className={classes.paper}>
             <LinkedInIcon />
             <GitHubIcon />
@@ -63,7 +68,7 @@ const Nav = () => {
             <EventAvailableIcon />
           </Paper>
         </Grid>
-      
+       */}
     </Grid>
 
   {/* <Social_Wrapper>
