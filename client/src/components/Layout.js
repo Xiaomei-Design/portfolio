@@ -1,16 +1,17 @@
 import React from 'react';
-import {Layout, Header, Content, Footer} from 'antd'
-import Nav from './Nav'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+
 
 
 const Layout = () => {
   return (
     <>
-      <Header>
-        <Nav />
-      </Header>
-      <Content></Content>
-      <Footer></Footer>
+      <CssBaseline />
+      <Container maxWidth="sm">
+        <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+      </Container>
     </>
   )
 }

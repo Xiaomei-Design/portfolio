@@ -11,7 +11,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/portfolio', {
+  .connect('mongodb://localhost:27017/portfolio', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,

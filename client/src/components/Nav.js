@@ -9,37 +9,70 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
-const Menu_Wrapper = styled.div`
-  display: flex;
-  justify-content: left;
-`
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
-const Social_Wrapper = styled.div`
-  display: flex;
-  justify-content: right;
-`
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-around;
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
+
+// const Menu_Wrapper = styled.div`
+//   display: flex;
+//   justify-content: left;
+//   margin-top: 20px
+// `
+
+// const Social_Wrapper = styled.div`
+//   display: flex;
+//   justify-content: right;
+//   margin-top: 20px
+// `
+// const Wrapper = styled.div`
+//   display: flex;
+//   justify-content: space-around;
   
-`
-const Nav = () => {
-  return (
-    <Wrapper>
-    <Menu_Wrapper>
-      <HomeOutlinedIcon /><Link to="/home">Home</Link>
-      <FaceOutlinedIcon /><Link to='/about'>About</Link>
-      <ComputerOutlinedIcon /><Link to="/projects">Projects</Link>
-      <Link to="/blog">Blog</Link>
-    </Menu_Wrapper>
+// `
 
-  <Social_Wrapper>
+const Nav = () => {
+  const classes = useStyles();
+
+  return (
+    <div>
+    <Grid container spacing={1}>
+       <Grid item xs={6}>
+          <Paper className={classes.paper}>
+          <HomeOutlinedIcon /><Link to="/">Home</Link>
+          <FaceOutlinedIcon /><Link to='/about'>About</Link>
+          <ComputerOutlinedIcon /><Link to="/projects">Projects</Link>
+          <Link to="/blog">Blog</Link>
+          </Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper className={classes.paper}>
+            <LinkedInIcon />
+            <GitHubIcon />
+            <EmailIcon />
+            <EventAvailableIcon />
+          </Paper>
+        </Grid>
+      
+    </Grid>
+
+  {/* <Social_Wrapper>
     <LinkedInIcon />
     <GitHubIcon />
     <EmailIcon />
     <EventAvailableIcon />
-  </Social_Wrapper>
-</Wrapper>
+  </Social_Wrapper> */}
+</div>
   )
 }
 
