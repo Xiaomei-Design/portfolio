@@ -1,91 +1,90 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import FaceOutlinedIcon from '@material-ui/icons/FaceOutlined';
-import ComputerOutlinedIcon from '@material-ui/icons/ComputerOutlined';
-import MusicVideoIcon from '@material-ui/icons/MusicVideo';
-
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-
-import { HomeIcon } from './Icons';
-
-import { Home, Food} from 'mdi-material-ui';
-import { Hobby } from 'mdi-material-ui';
-
-import Icon from '@mdi/react';
-import { mdiAccount } from '@mdi/js';
-
-
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
+import FaceOutlinedIcon from "@material-ui/icons/FaceOutlined";
+import ComputerOutlinedIcon from "@material-ui/icons/ComputerOutlined";
+import MusicVideoIcon from "@material-ui/icons/MusicVideo";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import EmailIcon from "@material-ui/icons/EmailOutlined";
+import EventAvailableIcon from "@material-ui/icons/EventAvailableOutlined";
 
 const Menu_Wrapper = styled.div`
   display: flex;
-  flexDirection:"row";
-  justifyContent:"space-between";
-  margin-top: 20px;
+  flexdirection: row;
+  justifycontent: left;
+  margin: 10px 0;
   color: #64ffda;
-`
+`;
 
-// const Social_Wrapper = styled.div`
-//   display: flex;
-//   justify-content: right;
-//   margin-top: 20px
-// `
-// const Wrapper = styled.div`
-//   display: flex;
-//   justify-content: space-around;
-  
-// `
+const Social_Wrapper = styled.div`
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 10px 0;
+`;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const Article = styled.article`
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+`;
 
 const Nav = () => {
-
   return (
-    <div>
- 
-          <Menu_Wrapper>
-            <article>
-            <HomeOutlinedIcon color="#64ffda" fontSize="large"/>
-            <Link to="/">Home</Link>
-            </article>
+    <Wrapper>
+      <Menu_Wrapper>
+        <Article>
+          <HomeOutlinedIcon color="#64ffda" fontSize="large" />
+          <Link to="/">Home</Link>
+        </Article>
+        <Article>
+          <FaceOutlinedIcon color="#64ffda" fontSize="large" />
+          <Link to="/about">About</Link>
+        </Article>
+        <Article>
+          <ComputerOutlinedIcon color="#64ffda" fontSize="large" />
+          <Link to="/projects">Projects</Link>
+        </Article>
+        <Article>
+          <MusicVideoIcon color="#64ffda" fontSize="large" />
+          <Link to="/blog">Hobbies</Link>
+        </Article>
+      </Menu_Wrapper>
 
-            <article>
-            <FaceOutlinedIcon color="#64ffda" fontSize="large" />
-            <Link to='/about'>About</Link>
-            <ComputerOutlinedIcon color="#64ffda" fontSize="large"/>
-            <Link to="/projects">Projects</Link>
-            <MusicVideoIcon color="#64ffda" fontSize="large" />
-            <Link to="/blog">Hobbies</Link>
-            </article>
-          </Menu_Wrapper>
-          {/* <LinkedInIcon />
-            <GitHubIcon />
-            <EmailIcon />
-            <EventAvailableIcon /> */}
-            {/* <p><Icon path={mdiAccount} title="Home" size={2} horizontal 
-   color="green" spin={2}/>Home</p> */}
-         
-        {/* <Grid item xs={6}>
-          <Paper className={classes.paper}>
-            <LinkedInIcon />
-            <GitHubIcon />
-            <EmailIcon />
-            <EventAvailableIcon />
-          </Paper>
-        </Grid>
-       */}
+      <Social_Wrapper>
+        <a href="https://www.linkedin.com/in/xiaomei-wu"><LinkedInIcon
+          color="#64ffda"
+          fontSize="large"
+          style={{ padding: "0 10px" }}
+        /></a>
+        <a href="https://github.com/Xiaomei-Design"><GitHubIcon
+          color="#64ffda"
+          fontSize="large"
+          style={{ padding: "0 10px" }}
+        /></a>
+        <a href="mailto:xiaomeiwu@outlook.de?subject=Mail from your Website">
+        <EmailIcon
+          color="#64ffda"
+          fontSize="large"
+          style={{ padding: "0 10px" }}
+        /></a>
+        <a href='https://calendly.com/xiaomei-wu'>
+        <EventAvailableIcon
+          color="#64ffda"
+          fontSize="large"
+          style={{ padding: "0 10px" }}
+        /></a>
+        
+      </Social_Wrapper>
+    </Wrapper>
+  );
+};
 
-  {/* <Social_Wrapper>
-    <LinkedInIcon />
-    <GitHubIcon />
-    <EmailIcon />
-    <EventAvailableIcon />
-  </Social_Wrapper> */}
-
-  
-</div>
-  )
-}
-
-export default Nav
+export default Nav;
