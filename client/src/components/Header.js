@@ -10,6 +10,7 @@ const Headline = styled.h1`
   margin: 0;
   padding: 0;
   display: inline;
+  color: #0a192f;
 `
 const Wrapper = styled.div`
   background-image: url(${backgroundImg});
@@ -24,10 +25,12 @@ const Wrapper = styled.div`
 const Header = () => {
   return (
     <Wrapper>
-      <span>Hi, my name is</span>
+      <div style={{paddingLeft: "40px"}}>
+      <p>Hi, my name is</p>
       <Headline>Xiaomei Wu</Headline>
-      <span>I build websites.</span>
+      <h2>I build websites.</h2>
       <Buttons title="Get in touch" />
+      </div>
       {/* <img src={backgroundImg}/> */}
     </Wrapper>
   )
