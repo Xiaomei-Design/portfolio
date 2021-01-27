@@ -18,24 +18,15 @@ import { Hobby } from 'mdi-material-ui';
 import Icon from '@mdi/react';
 import { mdiAccount } from '@mdi/js';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-  },
-}));
 
-// const Menu_Wrapper = styled.div`
-//   display: flex;
-//   justify-content: left;
-//   margin-top: 20px
-// `
+
+const Menu_Wrapper = styled.div`
+  display: flex;
+  flexDirection:"row";
+  justifyContent:"space-between";
+  margin-top: 20px;
+  color: #64ffda;
+`
 
 // const Social_Wrapper = styled.div`
 //   display: flex;
@@ -49,32 +40,32 @@ const useStyles = makeStyles((theme) => ({
 // `
 
 const Nav = () => {
-  const classes = useStyles();
 
   return (
     <div>
-    <Grid container spacing={1} >
-       <Grid item xs={12}>
-          <Paper className={classes.paper}>
-          <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
-            <div>
-            <Link to="/"><HomeOutlinedIcon color="primary" fontSize="large"/>Home</Link>
-            </div>
+ 
+          <Menu_Wrapper>
+            <article>
+            <HomeOutlinedIcon color="#64ffda" fontSize="large"/>
+            <Link to="/">Home</Link>
+            </article>
 
-            <div>
-            <Link to='/about'><FaceOutlinedIcon color="primary" fontSize="large" />About</Link>
-            <Link to="/projects"><ComputerOutlinedIcon color="primary" fontSize="large"/>Projects</Link>
-            <Link to="/blog"><MusicVideoIcon color="primary" fontSize="large" />Hobbies</Link>
-            </div>
-          </div>
+            <article>
+            <FaceOutlinedIcon color="#64ffda" fontSize="large" />
+            <Link to='/about'>About</Link>
+            <ComputerOutlinedIcon color="#64ffda" fontSize="large"/>
+            <Link to="/projects">Projects</Link>
+            <MusicVideoIcon color="#64ffda" fontSize="large" />
+            <Link to="/blog">Hobbies</Link>
+            </article>
+          </Menu_Wrapper>
           {/* <LinkedInIcon />
             <GitHubIcon />
             <EmailIcon />
             <EventAvailableIcon /> */}
             {/* <p><Icon path={mdiAccount} title="Home" size={2} horizontal 
    color="green" spin={2}/>Home</p> */}
-          </Paper>
-        </Grid>
+         
         {/* <Grid item xs={6}>
           <Paper className={classes.paper}>
             <LinkedInIcon />
@@ -84,7 +75,6 @@ const Nav = () => {
           </Paper>
         </Grid>
        */}
-    </Grid>
 
   {/* <Social_Wrapper>
     <LinkedInIcon />
