@@ -4,31 +4,29 @@ import styled from 'styled-components'
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import FaceOutlinedIcon from '@material-ui/icons/FaceOutlined';
 import ComputerOutlinedIcon from '@material-ui/icons/ComputerOutlined';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import EmailIcon from '@material-ui/icons/Email';
-import EventAvailableIcon from '@material-ui/icons/EventAvailable';
+import MusicVideoIcon from '@material-ui/icons/MusicVideo';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
+import { HomeIcon } from './Icons';
 
-// const Menu_Wrapper = styled.div`
-//   display: flex;
-//   justify-content: left;
-//   margin-top: 20px
-// `
+import { Home, Food} from 'mdi-material-ui';
+import { Hobby } from 'mdi-material-ui';
+
+import Icon from '@mdi/react';
+import { mdiAccount } from '@mdi/js';
+
+
+
+const Menu_Wrapper = styled.div`
+  display: flex;
+  flexDirection:"row";
+  justifyContent:"space-between";
+  margin-top: 20px;
+  color: #64ffda;
+`
 
 // const Social_Wrapper = styled.div`
 //   display: flex;
@@ -42,24 +40,32 @@ const useStyles = makeStyles((theme) => ({
 // `
 
 const Nav = () => {
-  const classes = useStyles();
 
   return (
     <div>
-    <Grid container spacing={1}>
-       <Grid item xs={12}>
-          <Paper className={classes.paper}>
-          <HomeOutlinedIcon /><Link to="/">Home</Link>
-          <FaceOutlinedIcon /><Link to='/about'>About</Link>
-          <ComputerOutlinedIcon /><Link to="/projects">Projects</Link>
-          <Link to="/blog">Blog</Link>
+ 
+          <Menu_Wrapper>
+            <article>
+            <HomeOutlinedIcon color="#64ffda" fontSize="large"/>
+            <Link to="/">Home</Link>
+            </article>
 
-          <LinkedInIcon />
+            <article>
+            <FaceOutlinedIcon color="#64ffda" fontSize="large" />
+            <Link to='/about'>About</Link>
+            <ComputerOutlinedIcon color="#64ffda" fontSize="large"/>
+            <Link to="/projects">Projects</Link>
+            <MusicVideoIcon color="#64ffda" fontSize="large" />
+            <Link to="/blog">Hobbies</Link>
+            </article>
+          </Menu_Wrapper>
+          {/* <LinkedInIcon />
             <GitHubIcon />
             <EmailIcon />
-            <EventAvailableIcon />
-          </Paper>
-        </Grid>
+            <EventAvailableIcon /> */}
+            {/* <p><Icon path={mdiAccount} title="Home" size={2} horizontal 
+   color="green" spin={2}/>Home</p> */}
+         
         {/* <Grid item xs={6}>
           <Paper className={classes.paper}>
             <LinkedInIcon />
@@ -69,7 +75,6 @@ const Nav = () => {
           </Paper>
         </Grid>
        */}
-    </Grid>
 
   {/* <Social_Wrapper>
     <LinkedInIcon />
@@ -77,6 +82,8 @@ const Nav = () => {
     <EmailIcon />
     <EventAvailableIcon />
   </Social_Wrapper> */}
+
+  
 </div>
   )
 }
