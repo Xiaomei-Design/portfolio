@@ -10,11 +10,12 @@ const Headline = styled.h1`
   margin: 0;
   padding: 0;
   display: inline;
-  color: #0a192f;
+  color: #c9f227;
 `
 const Wrapper = styled.div`
-  background-image: url(${backgroundImg});
-  background-size: cover;
+  ${'' /* background-color: #02021f; */}
+  ${'' /* background-image: url(${backgroundImg}); */}
+  ${'' /* background-size: cover; */}
   width: 100%;
   height: 600px;
   display: flex;

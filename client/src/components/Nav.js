@@ -15,7 +15,7 @@ const Menu_Wrapper = styled.div`
   flexdirection: row;
   justifycontent: left;
   margin: 10px 0;
-  color: #64ffda;
+  color: pink;
 `;
 
 const Social_Wrapper = styled.div`
@@ -23,6 +23,30 @@ const Social_Wrapper = styled.div`
   justify-content: right;
   align-items: center;
   margin: 10px 0;
+
+  a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #baf73c;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -36,48 +60,63 @@ const Article = styled.article`
   padding: 0 10px;
 `;
 
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+
+    &:focus, &:visited, &:link, &:active {
+        text-decoration: none;
+        color: pink;
+    }
+    &:hover, &:active  {
+        text-decoration: none;
+        color: #baf73c;
+    }
+`;
+
 const Nav = () => {
   return (
     <Wrapper>
       <Menu_Wrapper>
         <Article>
           <HomeOutlinedIcon color="#64ffda" fontSize="large" />
-          <Link to="/">Home</Link>
+          <StyledLink to="/">Home</StyledLink>
         </Article>
         <Article>
           <FaceOutlinedIcon color="#64ffda" fontSize="large" />
-          <Link to="/about">About</Link>
+          <StyledLink to="/about">About</StyledLink>
         </Article>
         <Article>
           <ComputerOutlinedIcon color="#64ffda" fontSize="large" />
-          <Link to="/projects">Projects</Link>
+          <StyledLink to="/projects">Projects</StyledLink>
         </Article>
         <Article>
           <MusicVideoIcon color="#64ffda" fontSize="large" />
-          <Link to="/blog">Hobbies</Link>
+          <StyledLink to="/blog">Hobbies</StyledLink>
         </Article>
       </Menu_Wrapper>
 
       <Social_Wrapper>
-        <a href="https://www.linkedin.com/in/xiaomei-wu"><LinkedInIcon
-          color="#64ffda"
+        <a href="https://www.linkedin.com/in/xiaomei-wu">
+        <LinkedInIcon
+          color="#baf73c"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href="https://github.com/Xiaomei-Design"><GitHubIcon
-          color="#64ffda"
+          color="#baf73c"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href="mailto:xiaomeiwu@outlook.de?subject=Mail from your Website">
         <EmailIcon
-          color="#64ffda"
+          color="#baf73c"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href='https://calendly.com/xiaomei-wu'>
         <EventAvailableIcon
-          color="#64ffda"
+          color="#baf73c"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
