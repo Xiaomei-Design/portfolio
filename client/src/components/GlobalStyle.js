@@ -18,5 +18,8 @@ export default createGlobalStyle`
     ${'' /* font-family: 'Magnum'; */}
     background-color: #233554;
     line-height: 1.4;
+    p {
+      color: pink
+    }
   }
 `

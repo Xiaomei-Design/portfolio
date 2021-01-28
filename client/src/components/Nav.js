@@ -15,7 +15,7 @@ const Menu_Wrapper = styled.div`
   flexdirection: row;
   justifycontent: left;
   margin: 10px 0;
-  color: #baf73c;
+  color: pink;
 `;
 
 const Social_Wrapper = styled.div`
@@ -64,7 +64,11 @@ const Article = styled.article`
 const StyledLink = styled(Link)`
     text-decoration: none;
 
-    &:focus, &:hover, &:visited, &:link, &:active {
+    &:focus, &:visited, &:link, &:active {
+        text-decoration: none;
+        color: pink;
+    }
+    &:hover, &:active  {
         text-decoration: none;
         color: #baf73c;
     }
