@@ -6,7 +6,7 @@ import Buttons from '../components/Buttons'
 const Headline = styled.h1`
   font-family: 'Magnum';
   font-size: 80px;
-  font-weight: 500px;
+  font-weight: 800px;
   margin: 0;
   padding: 0;
   display: inline;
@@ -23,13 +23,17 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
+const Headline2 = styled.h2`
+  color: #fffacd
+`
+
 const Header = () => {
   return (
     <Wrapper>
       <div style={{paddingLeft: "40px"}}>
       <p>Hi, my name is</p>
       <Headline>Xiaomei Wu</Headline>
-      <h2>I build websites.</h2>
+      <Headline2>I build websites.</Headline2>
       <Buttons title="Get in touch" />
       </div>
       {/* <img src={backgroundImg}/> */}
