@@ -16,7 +16,7 @@ export default createGlobalStyle`
     sans-serif;
     margin: 0 50px;
     ${'' /* font-family: 'Magnum'; */}
-    ${'' /* background-color: #233554; */}
+    background-color: #233554;
     line-height: 1.4;
   }
 `
