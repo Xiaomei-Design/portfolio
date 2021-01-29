@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import backgroundImg  from "../images/sincerely-media-ZnEkNHWZEWU-unsplash.jpg";
-import Buttons from '../components/Buttons'
+import Buttons from '../components/Buttons';
+import Typist from 'react-typist';
 
 const Headline = styled.h1`
   font-family: 'Magnum';
@@ -30,11 +30,21 @@ const Headline2 = styled.h2`
 const Header = () => {
   return (
     <Wrapper>
+      
       <div style={{paddingLeft: "40px"}}>
-      <p>Hi, my name is</p>
-      <Headline>Xiaomei Wu</Headline>
-      <Headline2>I build websites.</Headline2>
-      <Buttons title="Get in touch" />
+      {/* <p>Hi, my name is</p> */}
+      {/* <Typical steps={['Hi, my name is']}
+        wrapper="p"
+      /> */}
+      <Typist >
+        <p>Hi, my name is</p>
+        <Typist.Delay ms={500} />
+        <Headline>Xiaomei Wu</Headline>
+        <Typist.Delay ms={500} />
+        <Headline2>I build websites.</Headline2>
+      </Typist>
+        <Buttons title="Get in touch" />
+      
       </div>
       {/* <img src={backgroundImg}/> */}
     </Wrapper>

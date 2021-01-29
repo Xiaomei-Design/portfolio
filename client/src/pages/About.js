@@ -11,7 +11,6 @@ const Img = styled.img`
 const About = () => {
   return (
     <div>
-      <Nav />
       <h1>About me</h1>
       <Img src={Me} />
     </div>
