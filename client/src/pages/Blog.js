@@ -4,7 +4,6 @@ import Nav from "../components/Nav";
 const Blog = () => {
   return (
     <div>
-     <Nav />
       <h2>My blogs</h2>
     </div>
   )
