@@ -11,15 +11,14 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Proza Libre', "Libre Franklin", 'Oxygen',
+    ${'' /* font-family: -apple-system, BlinkMacSystemFont, 'Proza Libre', "Libre Franklin", 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */}
+    font-family: "lato";
     margin: 0 50px;
     ${'' /* font-family: 'Magnum'; */}
     background-color: #233554;
     line-height: 1.4;
-    p {
-      color: pink
-    }
+    color: pink
   }
 `

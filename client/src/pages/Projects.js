@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from "../components/Nav"
 // import SingleLineGridList from '../components/SingleLineGridList'
 // import styled from 'styled-components';
 import AdvancedGridList from '../components/AdvancedGridList';

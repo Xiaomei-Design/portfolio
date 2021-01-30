@@ -48,10 +48,15 @@ a:active {
   text-decoration: underline;
 }
 `;
-const Wrapper = styled.div`
+const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 `;
 
 const Article = styled.article`
@@ -74,25 +79,25 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const Nav = () => {
+const Navbar = () => {
   return (
-    <Wrapper>
+    <Nav>
       <Menu_Wrapper>
         <Article>
           <HomeOutlinedIcon color="#64ffda" fontSize="large" />
-          <StyledLink to="/">Home</StyledLink>
+          <StyledLink to="/">HOME</StyledLink>
         </Article>
         <Article>
           <FaceOutlinedIcon color="#64ffda" fontSize="large" />
-          <StyledLink to="/about">About</StyledLink>
+          <StyledLink to="/about">ABOUT</StyledLink>
         </Article>
         <Article>
           <ComputerOutlinedIcon color="#64ffda" fontSize="large" />
-          <StyledLink to="/projects">Projects</StyledLink>
+          <StyledLink to="/projects">PROJECTS</StyledLink>
         </Article>
         <Article>
           <MusicVideoIcon color="#64ffda" fontSize="large" />
-          <StyledLink to="/blog">Hobbies</StyledLink>
+          <StyledLink to="/blog">INTERESTS</StyledLink>
         </Article>
       </Menu_Wrapper>
 
@@ -122,8 +127,8 @@ const Nav = () => {
         /></a>
         
       </Social_Wrapper>
-    </Wrapper>
+    </Nav>
   );
 };
 
-export default Nav;
+export default Navbar;
