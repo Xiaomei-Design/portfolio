@@ -5,6 +5,8 @@ import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import FaceOutlinedIcon from "@material-ui/icons/FaceOutlined";
 import ComputerOutlinedIcon from "@material-ui/icons/ComputerOutlined";
 import MusicVideoIcon from "@material-ui/icons/MusicVideo";
+import CreateIcon from '@material-ui/icons/Create';
+
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/EmailOutlined";
@@ -15,9 +17,8 @@ const Menu_Wrapper = styled.div`
   flexdirection: row;
   justifycontent: left;
   margin: 10px 0;
-  color: pink;
+  color: #e26a6a;
 `;
-
 const Social_Wrapper = styled.div`
   display: flex;
   justify-content: right;
@@ -25,13 +26,13 @@ const Social_Wrapper = styled.div`
   margin: 10px 0;
 
   a:link {
-  color: pink;
+  color: #360036;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #360036;
   background-color: transparent;
   text-decoration: none;
 }
@@ -58,24 +59,22 @@ const Nav = styled.nav`
   width: 100%;
 }
 `;
-
 const Article = styled.article`
   display: flex;
   flex-direction: column;
   padding: 0 10px;
 `;
-
-
 const StyledLink = styled(Link)`
     text-decoration: none;
 
     &:focus, &:visited, &:link, &:active {
         text-decoration: none;
-        color: pink;
+        color: #360036;
     }
     &:hover, &:active  {
         text-decoration: none;
         color: #baf73c;
+        text-decoration: underline
     }
 `;
 
@@ -84,44 +83,48 @@ const Navbar = () => {
     <Nav>
       <Menu_Wrapper>
         <Article>
-          <HomeOutlinedIcon color="#64ffda" fontSize="large" />
+          <HomeOutlinedIcon color="#360036" fontSize="large" />
           <StyledLink to="/">HOME</StyledLink>
         </Article>
         <Article>
-          <FaceOutlinedIcon color="#64ffda" fontSize="large" />
+          <FaceOutlinedIcon color="#360036" fontSize="large" />
           <StyledLink to="/about">ABOUT</StyledLink>
         </Article>
         <Article>
-          <ComputerOutlinedIcon color="#64ffda" fontSize="large" />
+          <ComputerOutlinedIcon color="#360036" fontSize="large" />
           <StyledLink to="/projects">PROJECTS</StyledLink>
         </Article>
         <Article>
-          <MusicVideoIcon color="#64ffda" fontSize="large" />
-          <StyledLink to="/blog">INTERESTS</StyledLink>
+          <MusicVideoIcon color="#360036" fontSize="large" />
+          <StyledLink to="/interests">INTERESTS</StyledLink>
+        </Article>
+        <Article>
+          <CreateIcon color="#360036" fontSize="large" />
+          <StyledLink to="/blogs">BLOGS</StyledLink>
         </Article>
       </Menu_Wrapper>
 
       <Social_Wrapper>
         <a href="https://www.linkedin.com/in/xiaomei-wu">
         <LinkedInIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href="https://github.com/Xiaomei-Design"><GitHubIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href="mailto:xiaomeiwu@outlook.de?subject=Mail from your Website">
         <EmailIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href='https://calendly.com/xiaomei-wu'>
         <EventAvailableIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>

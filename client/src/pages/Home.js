@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import About from './About';
-import Blog from './Blog';
+import Interests from './Interests';
 import Projects from './Projects';
 // import Layout from '../components/Layout'
 
@@ -15,7 +15,7 @@ const Home = () => {
       <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script> */}
       <About />
       <Projects />
-      <Blog />
+      <Interests />
     </div>
   )
 }
