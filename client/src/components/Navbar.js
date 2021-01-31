@@ -17,7 +17,6 @@ const Menu_Wrapper = styled.div`
   margin: 10px 0;
   color: #e26a6a;
 `;
-
 const Social_Wrapper = styled.div`
   display: flex;
   justify-content: right;
@@ -58,14 +57,11 @@ const Nav = styled.nav`
   width: 100%;
 }
 `;
-
 const Article = styled.article`
   display: flex;
   flex-direction: column;
   padding: 0 10px;
 `;
-
-
 const StyledLink = styled(Link)`
     text-decoration: none;
 

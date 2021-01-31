@@ -32,7 +32,7 @@ const Paragraph = styled.p`
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <Headline>ABOUT ME</Headline>
       <Container>
       <Img src={Me} />

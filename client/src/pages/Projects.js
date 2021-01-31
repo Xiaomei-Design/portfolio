@@ -3,6 +3,7 @@ import React from 'react';
 // import styled from 'styled-components';
 import AdvancedGridList from '../components/AdvancedGridList';
 import styled from 'styled-components';
+import ProjectCard from '../components/ProjectCard'
 
 
 const Wrapper = styled.div`
@@ -38,7 +39,8 @@ const Projects = () => {
     <Wrapper>
       <h2>MY PROJECTS</h2>
       {/* <SingleLineGridList /> */}
-      <AdvancedGridList />
+      {/* <AdvancedGridList /> */}
+      <ProjectCard />
     </Wrapper>
   )
 }
