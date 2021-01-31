@@ -13,8 +13,8 @@ import Sudoku from '../images/sudoku.png';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    // flexWrap: 'wrap',
+    justifyContent: 'space-between',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },

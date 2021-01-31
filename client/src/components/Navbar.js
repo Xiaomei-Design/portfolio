@@ -76,6 +76,7 @@ const StyledLink = styled(Link)`
     &:hover, &:active  {
         text-decoration: none;
         color: #baf73c;
+        text-decoration: underline
     }
 `;
 
