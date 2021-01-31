@@ -1,10 +1,6 @@
 import React from 'react';
-// import SingleLineGridList from '../components/SingleLineGridList'
-// import styled from 'styled-components';
-import AdvancedGridList from '../components/AdvancedGridList';
 import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard'
-
 
 const Wrapper = styled.div`
   width: 100%;
@@ -38,8 +34,6 @@ const Projects = () => {
   return (
     <Wrapper>
       <h2>MY PROJECTS</h2>
-      {/* <SingleLineGridList /> */}
-      {/* <AdvancedGridList /> */}
       <ProjectCard />
     </Wrapper>
   )

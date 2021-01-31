@@ -5,6 +5,8 @@ import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import FaceOutlinedIcon from "@material-ui/icons/FaceOutlined";
 import ComputerOutlinedIcon from "@material-ui/icons/ComputerOutlined";
 import MusicVideoIcon from "@material-ui/icons/MusicVideo";
+import CreateIcon from '@material-ui/icons/Create';
+
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/EmailOutlined";
@@ -94,7 +96,11 @@ const Navbar = () => {
         </Article>
         <Article>
           <MusicVideoIcon color="#360036" fontSize="large" />
-          <StyledLink to="/blog">INTERESTS</StyledLink>
+          <StyledLink to="/interests">INTERESTS</StyledLink>
+        </Article>
+        <Article>
+          <CreateIcon color="#360036" fontSize="large" />
+          <StyledLink to="/blogs">BLOGS</StyledLink>
         </Article>
       </Menu_Wrapper>
 

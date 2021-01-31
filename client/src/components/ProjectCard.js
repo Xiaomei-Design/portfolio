@@ -35,7 +35,8 @@ const tileData = [
   {
     img: HealthTracker,
     title: "Nutrition & Health Tracker",
-    url: "https://github.com/My-Health-Tracker-V1/My-health-Tracker",
+    github: "https://github.com/My-Health-Tracker-V1/My-health-Tracker",
+    webiste: "https://my-health-tracker-v1.herokuapp.com/",
     icon: "health-tracker",
     description: ""
   },
@@ -43,14 +44,16 @@ const tileData = [
   {
     img: PetsApp,
     title: "A Matching App based on Pets",
-    url: "https://github.com/xiaodavi/petsapp",
+    github: "https://github.com/xiaodavi/petsapp",
+    website: "https://petsapp-xiaovid.herokuapp.com/",
     icon: "pets-app",
     description: "",
   },
   {
     img: Sudoku,
     title: "A Simplified Sudoku Game",
-    url: "https://github.com/Xiaomei-Design/p5js-sudoku",
+    github: "https://github.com/Xiaomei-Design/p5js-sudoku",
+    webiste: "https://xiaomei-design.github.io/p5js-sudoku/",
     icon: "sudoku",
     description: ""
   }
@@ -79,10 +82,10 @@ export default function ProjectCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href={tile.url}>
+        <Button size="small" color="primary" href={tile.github}>
           GitHub
         </Button>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" href={tile.website}>
           Learn More
         </Button>
       </CardActions>
