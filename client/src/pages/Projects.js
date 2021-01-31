@@ -4,6 +4,7 @@ import React from 'react';
 import AdvancedGridList from '../components/AdvancedGridList';
 import styled from 'styled-components';
 
+
 const Wrapper = styled.div`
   width: 100%;
   height: 700px;
@@ -34,11 +35,11 @@ const Paragraph = styled.p`
 
 const Projects = () => {
   return (
-    <div>
+    <Wrapper>
       <h2>MY PROJECTS</h2>
       {/* <SingleLineGridList /> */}
       <AdvancedGridList />
-    </div>
+    </Wrapper>
   )
 }
 

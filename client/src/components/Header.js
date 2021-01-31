@@ -13,7 +13,7 @@ const Headline = styled.h1`
   margin: 0;
   padding: 0;
   display: inline;
-  color: #c9f227;
+  color: #e26a6a;
 `
 const Wrapper = styled.div`
   ${'' /* background-color: #02021f; */}
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 
 const Headline2 = styled.h2`
   font-size: 3em;
-  color: #c9f227
+  color: #e26a6a;
 `
 
 const Header = () => {

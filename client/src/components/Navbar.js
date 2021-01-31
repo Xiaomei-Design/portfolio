@@ -15,7 +15,7 @@ const Menu_Wrapper = styled.div`
   flexdirection: row;
   justifycontent: left;
   margin: 10px 0;
-  color: pink;
+  color: #e26a6a;
 `;
 
 const Social_Wrapper = styled.div`
@@ -25,13 +25,13 @@ const Social_Wrapper = styled.div`
   margin: 10px 0;
 
   a:link {
-  color: pink;
+  color: #360036;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #360036;
   background-color: transparent;
   text-decoration: none;
 }
@@ -71,7 +71,7 @@ const StyledLink = styled(Link)`
 
     &:focus, &:visited, &:link, &:active {
         text-decoration: none;
-        color: pink;
+        color: #360036;
     }
     &:hover, &:active  {
         text-decoration: none;
@@ -85,19 +85,19 @@ const Navbar = () => {
     <Nav>
       <Menu_Wrapper>
         <Article>
-          <HomeOutlinedIcon color="#64ffda" fontSize="large" />
+          <HomeOutlinedIcon color="#360036" fontSize="large" />
           <StyledLink to="/">HOME</StyledLink>
         </Article>
         <Article>
-          <FaceOutlinedIcon color="#64ffda" fontSize="large" />
+          <FaceOutlinedIcon color="#360036" fontSize="large" />
           <StyledLink to="/about">ABOUT</StyledLink>
         </Article>
         <Article>
-          <ComputerOutlinedIcon color="#64ffda" fontSize="large" />
+          <ComputerOutlinedIcon color="#360036" fontSize="large" />
           <StyledLink to="/projects">PROJECTS</StyledLink>
         </Article>
         <Article>
-          <MusicVideoIcon color="#64ffda" fontSize="large" />
+          <MusicVideoIcon color="#360036" fontSize="large" />
           <StyledLink to="/blog">INTERESTS</StyledLink>
         </Article>
       </Menu_Wrapper>
@@ -105,24 +105,24 @@ const Navbar = () => {
       <Social_Wrapper>
         <a href="https://www.linkedin.com/in/xiaomei-wu">
         <LinkedInIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href="https://github.com/Xiaomei-Design"><GitHubIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href="mailto:xiaomeiwu@outlook.de?subject=Mail from your Website">
         <EmailIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>
         <a href='https://calendly.com/xiaomei-wu'>
         <EventAvailableIcon
-          color="#baf73c"
+          color="#360036"
           fontSize="large"
           style={{ padding: "0 10px" }}
         /></a>

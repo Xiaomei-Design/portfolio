@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Me from '../images/me2.png'
 
 const Wrapper = styled.div`
@@ -27,7 +26,7 @@ const Headline = styled.h1`
 `
 const Paragraph = styled.p`
   padding: 50px;
-  color: white;
+  ${'' /* color: white; */}
   line-height: 1.8
 `
 
@@ -37,9 +36,9 @@ const About = () => {
       <Headline>ABOUT ME</Headline>
       <Container>
       <Img src={Me} />
-      <Paragraph>Hi! I’m Xiaomei, a full-stack web developer based in Berlin, Germany. After <br />
-      completing an MA degree in German Literature, I’ve decided to take the leap to <br />
-      pursue a career in software engineering. I’ve graduated from a full-time immersive <br />
+      <Paragraph>Hi! I’m Xiaomei, a full-stack web developer based in Berlin, Germany. After
+      completing an MA degree in German Literature, I’ve decided to take the leap to
+      pursue a career in software engineering. I’ve graduated from a full-time immersive
       software engineering program at Ironhack in Berlin. I love to learn new technologies and
       flex my creativity to create amazing things. </Paragraph>
       </Container>
