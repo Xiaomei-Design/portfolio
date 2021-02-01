@@ -20,8 +20,8 @@ const Wrapper = styled.div`
   ${'' /* justify-content: center; */}
   align-items: center
 `
-const skillsbadge = ["javascript", "react", "html", 
-"css", "nodejs", "mongodb", "ui", "api", "ruby"]
+const skillsbadge = ["javascript", "react", "mongodb", "html", 
+"css", "nodejs", "ruby"]
 
 const Interests = () => {
   

@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <Wrapper>
       <div style={{paddingLeft: "40px"}}>
-      <Typing speed={30} >
+      <Typing speed={20} >
         <p>Hi, my name is</p>
         <Typing.Delay ms={500} />
         <Headline>Xiaomei Wu</Headline>
