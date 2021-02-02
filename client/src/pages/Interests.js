@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import randomColor from "randomcolor";
+import Fade from 'react-reveal/Fade';
 
 import SVGIcon from "../components/SVGIcon";
 
@@ -26,6 +27,8 @@ const skillsbadge = ["javascript", "react", "mongodb", "html",
 const Interests = () => {
   
   return (
+    <>
+    <Fade bottom>
     <Wrapper>
       <h2>MY INTERESTS</h2>
       <div style={styles}>
@@ -34,6 +37,8 @@ const Interests = () => {
       })}
   </div>
     </Wrapper>
+    </Fade>
+    </>
   )
 }
 

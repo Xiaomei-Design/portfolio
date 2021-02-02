@@ -1,9 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Buttons from '../components/Buttons';
 // import Typist from 'react-typist';
 // import Typical from 'react-typical';
 import Typing from 'react-typing-animation'
+import Fade from 'react-reveal/Fade';
 // import './Cursor.scss';
 
 const Headline = styled.h1`
@@ -33,6 +34,8 @@ const Headline2 = styled.h2`
 
 const Header = () => {
   return (
+    <>
+    <Fade left>
     <Wrapper>
       <div style={{paddingLeft: "40px"}}>
       <Typing speed={20} >
@@ -47,6 +50,8 @@ const Header = () => {
       </div>
       {/* <img src={backgroundImg}/> */}
     </Wrapper>
+    </Fade>
+    </>
   )
 }
 

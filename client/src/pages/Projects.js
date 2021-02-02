@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProjectCard from '../components/ProjectCard'
+import ProjectCard from '../components/ProjectCard';
+import Fade from 'react-reveal/Fade'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -32,10 +33,14 @@ const Paragraph = styled.p`
 
 const Projects = () => {
   return (
+    <>
+    <Fade top>
     <Wrapper>
       <h2>MY PROJECTS</h2>
       <ProjectCard />
     </Wrapper>
+    </Fade>
+    </>
   )
 }
 

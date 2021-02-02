@@ -15,7 +15,7 @@ export default createGlobalStyle`
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */}
     font-family: "lato";
-    font-size: 16px;
+    font-size: 12px;
     margin: 0 50px;
     ${'' /* font-family: 'Magnum'; */}
     ${'' /* background-color: #233554; */}
