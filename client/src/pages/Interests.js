@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import randomColor from "randomcolor";
+import Fade from 'react-reveal/Fade';
 
 import SVGIcon from "../components/SVGIcon";
 
@@ -20,12 +21,14 @@ const Wrapper = styled.div`
   ${'' /* justify-content: center; */}
   align-items: center
 `
-const skillsbadge = ["javascript", "react", "html", 
-"css", "nodejs", "mongodb", "ui", "api", "ruby"]
+const skillsbadge = ["javascript", "react", "mongodb", "html", 
+"css", "nodejs", "ruby"]
 
 const Interests = () => {
   
   return (
+    <>
+    <Fade bottom>
     <Wrapper>
       <h2>MY INTERESTS</h2>
       <div style={styles}>
@@ -34,6 +37,8 @@ const Interests = () => {
       })}
   </div>
     </Wrapper>
+    </Fade>
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Me from '../images/me2.png'
 
 const Wrapper = styled.div`
@@ -26,12 +27,13 @@ const Headline = styled.h1`
 `
 const Paragraph = styled.p`
   padding: 50px;
-  ${'' /* color: white; */}
   line-height: 1.8
 `
 
 const About = () => {
   return (
+    <>
+    <Fade top>
     <Wrapper id="about">
       <Headline>ABOUT ME</Headline>
       <Container>
@@ -43,6 +45,8 @@ const About = () => {
       flex my creativity to create amazing things. </Paragraph>
       </Container>
     </Wrapper>
+    </Fade>
+    </>
   )
 }
 
