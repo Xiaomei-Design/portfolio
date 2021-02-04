@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Me from '../images/me2.png'
@@ -31,6 +31,9 @@ const Paragraph = styled.p`
 `
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Profile | Web Developer Xiaomei Wu"
+  })
   return (
     <>
     <Fade top>
