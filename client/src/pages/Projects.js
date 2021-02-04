@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
 import Fade from 'react-reveal/Fade'
@@ -32,6 +32,9 @@ const Paragraph = styled.p`
 `
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = "Projects | Web Developer Xiaomei Wu"
+  })
   return (
     <>
     <Fade top>

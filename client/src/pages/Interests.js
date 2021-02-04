@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import randomColor from "randomcolor";
 import Fade from 'react-reveal/Fade';
@@ -25,6 +25,9 @@ const skillsbadge = ["javascript", "react", "mongodb", "html",
 "css", "nodejs", "ruby"]
 
 const Interests = () => {
+  useEffect(() => {
+    document.title = "Interests | Web Developer Xiaomei Wu"
+  })
   
   return (
     <>

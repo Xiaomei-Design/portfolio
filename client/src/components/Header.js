@@ -14,7 +14,7 @@ const Headline = styled.h1`
   margin: 0;
   padding: 0;
   display: inline;
-  color: #e26a6a;
+  color: #5cdbd3;
 `
 const Wrapper = styled.div`
   ${'' /* background-color: #02021f; */}

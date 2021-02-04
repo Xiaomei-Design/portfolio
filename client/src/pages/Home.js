@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import About from './About';
 import Interests from './Interests';
 import Projects from './Projects';
-// import Layout from '../components/Layout'
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home | Web Developer Xiaomei Wu"
+  })
   return (
     <div>
       <Navbar />
